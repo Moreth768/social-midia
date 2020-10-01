@@ -1,10 +1,8 @@
-// Doc: https://br.vuejs.org/v2/guide/index.html
-
 const base = { 
   data() {
     return {
-      title: 'Haruno',
-      subtitle: 'Sarada'
+      title: 'Nome',
+      subtitle: 'Sobrenome'
     }
   }
 }
@@ -12,16 +10,22 @@ const base = {
 Vue.createApp(base).mount('#base')
 
 
-const main = {
+const plano_governo = {
   data() {
     return {
-      msg: 'If you think privacy is unimportant for you because you have nothing to hide, you might as well say free speech is unimportant for you because you have nothing useful to say.',
-      paragraph: 'This is paragraph text. Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+      meio_ambiente: [
+        { item: "Projeto Plantando o Futuro: Independente do resultado eleitoral, me comprometo a Plantar Uma Árvore Por Cada Voto Recebido;" },
+        { item: "Educação Ambiental no currículo básico das escolas municipais;"},
+        { item: "IPTU Verde (incentivo para imóveis que utilizarem sistemas sustentáveis, como: reaproveitamento de água, energia solar, árvore, etc..) "}
+      ], 
+      turismo: [
+        { item: "Buscar recursos para incentivar e desenvolver o turismo ecológico, rural e de aventura diante das inúmeras potencialidades do nosso município."}
+      ]
     }
   }
 }
 
-Vue.createApp(main).mount('#main')
+Vue.createApp(plano_governo).mount('#plano_governo')
 
 
 const footer = {
@@ -29,7 +33,7 @@ const footer = {
     return {
       name: '2020 © Haruno',
       version: 'Version 0.1',
-      by: 'sswellington'
+      by: 'Jiongu Softhouse'
     }
   }
 }
