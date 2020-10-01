@@ -1,0 +1,289 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" Cache-Control:public;>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Haruno">
+	<meta name="author" content="github.com/sswellington" />
+	<meta name="robots" content="Haruno - Desenvolvimento Web">
+	<meta name="keywords" content=" Haruno - Desenvolvimento Web" />
+	<meta name="description" content=" Haruno - Desenvolvimento Web">
+    
+    <title> Haruno  </title>
+
+	<link rel="shortcut icon" href="static/ico/favicon/Haruno Sakura.png" />
+    <link rel="stylesheet" href="static/css/new.css" />
+    <link rel="stylesheet" href="static/css/sarada.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#"> Home &nbsp; </a>
+            <a href="#"> Github &nbsp; </a>
+            <a href="#"> Apoio &nbsp; </a>
+            <a href="#"> Contato &nbsp; </a>
+            <a href="#"> Sobre &nbsp; </a>
+        </nav>
+        <a href="#">  
+            <div id="base">
+                <h1> {{ title }} </h1>
+            </div>
+        </a>
+    </header>
+
+    <main>
+        <div id="main">
+            <img src="screenshot/O_Time_7.jpg" alt="O Time 7">
+
+            <h1>Heading 1</h1>
+            <p>{{ paragraph }}</p>
+            <h2>Heading 2</h2>
+            <p>{{ paragraph }}</p>
+            <h3>Heading 3</h3>
+            <p>{{ paragraph }}</p>
+            <h4>Heading 4</h4>
+            <p>{{ paragraph }}</p>
+            <h5>Heading 5</h5>
+            <p>{{ paragraph }}</p>
+            <h6>Heading 6</h6>
+            <p>{{ paragraph }}</p>
+        
+            <br>
+            <hr>
+            <br>
+        
+            <p>
+                Lorem <mark>ipsum</mark> dolor sit amet <strong>consectetur</strong> adipisicing elit. Aut <i>harum
+                    molestias</i> labore amet
+                possimus <s>exercitationem aperiam</s> earum, doloribus <u>nobis ducimus</u> maiores quia voluptates quis omnis
+                molestiae quisquam. <a href="#">Voluptatibus, officiis laudantium?</a>
+            </p>
+        
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <code>Hic culpa, nobis doloremque</code> veniam non,
+                nihil
+                cupiditate odit repellat est <kbd>ALT + F4</kbd> expedita facilis. Fuga aspernatur, alias debitis eveniet totam
+                minima vel.
+            </p>
+        
+            <ul>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+                <li>List item</li>
+            </ul>
+        
+            <ol>
+                <li v-for="i in topics">
+                    {{ i.text }}
+                </li>
+            </ol>
+        
+            <dl>
+                <dt>Web</dt>
+                <dd>The part of the Internet that contains websites and web pages</dd>
+                <dt>HTML</dt>
+                <dd>A markup language for creating web pages</dd>
+                <dt>CSS</dt>
+                <dd>A technology to make HTML look better</dd>
+            </dl>
+        
+            <blockquote cite="https://en.wikiquote.org/wiki/Edward_Snowden">
+                {{msg}}.<br><br>– Edward Snowden
+            </blockquote>
+        
+            <pre>
+        &#x3C;!DOCTYPE html&#x3E;
+        &#x3C;html&#x3E;
+            &#x3C;head&#x3E;
+            &#x3C;title&#x3E;Hello World&#x3C;/title&#x3E;
+            &#x3C;/head&#x3E;
+            &#x3C;body&#x3E;
+            &#x3C;p&#x3E;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#x3C;/p&#x3E;
+            &#x3C;/body&#x3E;
+        &#x3C;/html&#x3E;</pre>
+        
+            <br>
+            <hr>
+            <br>
+        
+            <table>
+                <caption>Ho-kago Tea Time</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Instrument</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Yui Hirasawa</td>
+                        <td>Lead Guitar</td>
+                    </tr>
+                    <tr>
+                        <td>Mio Akiyama</td>
+                        <td>Bass</td>
+                    </tr>
+                    <tr>
+                        <td>Ritsu Tainaka</td>
+                        <td>Drums</td>
+                    </tr>
+                    <tr>
+                        <td>Tsumugi Kotobuki</td>
+                        <td>Keyboard</td>
+                    </tr>
+                    <tr>
+                        <td>Azusa Nakano</td>
+                        <td>Rhythm Guitar</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th>Name</th>
+                        <th>Instrument</th>
+                    </tr>
+                </tfoot>
+            </table>
+        
+            <br>
+            <hr>
+            <br>
+        
+            <form>
+                <p><em>This is not a real form and does not submit or save any information.</em></p>
+                <p>
+                    <label>First name</label><br>
+                    <input type="text" name="first_name">
+                </p>
+                <p>
+                    <label>Last name</label><br>
+                    <input type="text" name="last_name">
+                </p>
+                <p>
+                    <label>Gender</label><br>
+                    <label>
+                        <input type="radio" name="gender" value="Male">
+                        Male
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="gender" value="Female">
+                        Female
+                    </label>
+                    <br>
+                    <label>
+                        <input type="radio" name="gender" value="other-none-na">
+                        Non-binary
+                    </label>
+                </p>
+                <p>
+                    <label>Email</label><br>
+                    <input type="email" name="email" required="">
+                </p>
+                <p>
+                    <label>Phone number</label><br>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label>Password</label><br>
+                    <input type="password" name="password">
+                </p>
+                <p>
+                    <label>Country</label><br>
+                    <select>
+                        <option>Brazil</option>
+                        <option>India</option>
+                        <option>United States</option>
+                        <option>Indonesia</option>
+                        <option>China</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Comments</label><br>
+                    <textarea></textarea>
+                </p>
+                <p>
+                    <label>
+                        <input type="checkbox" value="terms">
+                        I agree to the <a>terms and conditions</a>
+                    </label>
+                </p>
+                <p>
+                    <button>Sign up </button> &nbsp;
+                    <button type="reset">Reset form</button> &nbsp;
+                    <button disabled="disabled">Disabled</button>
+                </p>
+            </form>
+        
+            <br>
+            <hr>
+            <br>
+        
+            <img src="screenshot/time7.jpg" alt="O Time 7 no clássico">
+        </div>
+    </main>
+    <footer>
+        <div id="socialmedia">
+
+            <h6> Redes Sociais </h6>
+
+            <!-- [Doc: rel="noreferrer"](https://html.spec.whatwg.org/multipage/links.html#link-type-noreferrer) -->
+           
+            <a href="https://www.twitter.com" rel="noreferrer" target="_blank">
+                <img alt="Twitter"
+                    src="static/ico/socialmedia/colored-circle/icon_twitter-32.png">
+            </a>
+
+            <a href="https://www.linkedin.com" rel="noreferrer" target="_blank">
+                <img alt="linkedin"
+                    src="static/ico/socialmedia/colored-circle/icon_linkedin-32.png">
+            </a>
+
+            <a href="https://www.facebook.com" rel="noreferrer" target="_blank">
+                <img alt="facebook"
+                    src="static/ico/socialmedia/colored-circle/icon_facebook-32.png">
+            </a>
+
+            <a href="https://www.youtube.com" rel="noreferrer" target="_blank">
+                <img alt="youtube"
+                    src="static/ico/socialmedia/colored-circle/icon_youtube-32.png">
+            </a>
+
+            <a href="#" rel="noreferrer" target="_blank">
+                <img alt="email"
+                    src="static/ico/socialmedia/colored-circle/icon_email-32.png">
+            </a>
+
+            <a href="https://www.instagram.com" rel="noreferrer" target="_blank">
+                <img alt="instagram"
+                    src="static/ico/socialmedia/colored-circle/instagram-47-32.png">
+            </a>
+        </div>
+
+        <div id="copyright" style="text-align: center;">
+            <span> 
+                <a href="https://github.com/sswellington/haruno/blob/main/LICENSE" 
+                rel="noreferrer" target="_blank"> {{ name }} 
+                </a> | 
+
+                <a href="https://github.com/sswellington/haruno/blob/main/CHANGELOG" 
+                rel="noreferrer" target="_blank"> {{ version }} 
+                </a>
+
+                <br> <a href="https://github.com/sswellington" 
+                rel="noreferrer" target="_blank"> 
+                    Design e desenvolvimento por {{ by }} </a>
+            </span>
+        </div>
+    </footer>
+</body>
+
+<script src="static/js/vue.js"></script>
+
+<script src="static/js/index.js"></script>
+
+</html>
